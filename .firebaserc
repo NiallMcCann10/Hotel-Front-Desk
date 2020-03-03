@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "development": "hotel-front-desk-b92d1",
+    "production": "hotel-front-desk-b92d1",
+    "default": "hotel-front-desk-b92d1"
+  }
+}
