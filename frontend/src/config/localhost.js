@@ -5,8 +5,8 @@ const firebaseConfig = {
   projectId: "hotel-front-desk-b92d1",
   storageBucket: "hotel-front-desk-b92d1.appspot.com",
   messagingSenderId: "541584238837",
-  appId: "1:541584238837:web:637b36e1d87bbd6fadfdbc",
-  measurementId: "G-HYDW32TMPR"
+  appId: "1:541584238837:web:f104bb8823823e13adfdbc",
+  measurementId: "G-ZCZHXX3ZR8"
 };
 
 // Cloud Functions
