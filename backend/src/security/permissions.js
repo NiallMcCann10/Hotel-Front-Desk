@@ -10,180 +10,140 @@ class Permissions {
       iamEdit: {
         id: 'iamEdit',
         allowedRoles: [
-          roles.owner,
-          roles.iamSecurityReviewer,
-          roles.editor,
+          roles.manager,
+          roles.employee,
         ],
         allowedStorageFolders: ['user'],
       },
       iamCreate: {
         id: 'iamCreate',
         allowedRoles: [
-          roles.owner,
-          roles.iamSecurityReviewer,
-          roles.editor,
+          roles.manager,
+          roles.employee,
         ],
       },
       iamImport: {
         id: 'iamImport',
         allowedRoles: [
-          roles.owner,
-          roles.iamSecurityReviewer,
-          roles.editor,
+          roles.manager,
+          roles.employee,
         ],
       },
       iamRead: {
         id: 'iamRead',
         allowedRoles: [
-          roles.owner,
-          roles.iamSecurityReviewer,
-          roles.editor,
-          roles.viewer,
+          roles.manager,
         ],
       },
       iamUserAutocomplete: {
         id: 'iamUserAutocomplete',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.viewer,
-
-
+          roles.manager,
+          roles.employee,
         ],
       },
       auditLogRead: {
         id: 'auditLogRead',
-        allowedRoles: [roles.owner, roles.auditLogViewer, roles.viewer],
+        allowedRoles: [roles.manager,],
       },
       settingsEdit: {
         id: 'settingsEdit',
-        allowedRoles: [roles.owner],
+        allowedRoles: [roles.manager],
       },
       guestsImport: {
         id: 'guestsImport',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.entityEditor,
-          roles.guestsEditor,
+          roles.manager,
+          roles.employee,
         ],
       },
       guestsCreate: {
         id: 'guestsCreate',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.entityEditor,
-          roles.guestsEditor,
+          roles.manager,
+          roles.employee,
+          roles.guest
         ],
         allowedStorageFolders: ['guests'],
       },
       guestsEdit: {
         id: 'guestsEdit',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.entityEditor,
-          roles.guestsEditor,
+          roles.manager,
+          roles.employee,
+          roles.guest
         ],
         allowedStorageFolders: ['guests'],
       },
       guestsDestroy: {
         id: 'guestsDestroy',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.entityEditor,
-          roles.guestsEditor,
+          roles.manager,
         ],
         allowedStorageFolders: ['guests'],
       },
       guestsRead: {
         id: 'guestsRead',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.viewer,
-          roles.entityEditor,
-          roles.guestsEditor,
-          roles.guestsViewer,
+          roles.manager,
+          roles.employee,
+          roles.guest
         ],
       },
       guestsAutocomplete: {
         id: 'guestsAutocomplete',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.viewer,
-          roles.entityEditor,
-          roles.guestsEditor,
-          roles.guestsViewer,
-          roles.bookingEditor,
-          roles.bookingViewer,
+          roles.manager,
+          roles.employee,
+          roles.guest
         ],
       },
 
       bookingImport: {
         id: 'bookingImport',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.entityEditor,
-          roles.bookingEditor,
+          roles.manager,
         ],
       },
       bookingCreate: {
         id: 'bookingCreate',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.entityEditor,
-          roles.bookingEditor,
+          roles.manager,
+          roles.employee,
+          roles.guest
         ],
         allowedStorageFolders: ['booking'],
       },
       bookingEdit: {
         id: 'bookingEdit',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.entityEditor,
-          roles.bookingEditor,
+          roles.manager,
+          roles.employee,
+          roles.guest
         ],
         allowedStorageFolders: ['booking'],
       },
       bookingDestroy: {
         id: 'bookingDestroy',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.entityEditor,
-          roles.bookingEditor,
+          roles.manager,
         ],
         allowedStorageFolders: ['booking'],
       },
       bookingRead: {
         id: 'bookingRead',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.viewer,
-          roles.entityEditor,
-          roles.bookingEditor,
-          roles.bookingViewer,
+          roles.manager,
+          roles.employee,
+          roles.guest
         ],
       },
       bookingAutocomplete: {
         id: 'bookingAutocomplete',
         allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.viewer,
-          roles.entityEditor,
-          roles.bookingEditor,
-          roles.bookingViewer,
-          roles.guestsEditor,
-          roles.guestsViewer,
+          roles.manager,
+          roles.employee,
+          roles.guest
         ],
       },
     };

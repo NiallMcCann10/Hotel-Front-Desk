@@ -124,7 +124,7 @@ const privateRoutes = [
     loader: () => import('view/booking/list/BookingListPage'),
     permissionRequired: permissions.bookingRead,
     exact: true,
-    icon: 'profiles',
+    icon: 'book',
     label: i18n('entities.booking.menu'),
     menu: true,
   },

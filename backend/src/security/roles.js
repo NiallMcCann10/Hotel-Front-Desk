@@ -4,17 +4,9 @@
 class Roles {
   static get values() {
     return {
-      owner: 'owner',
-      editor: 'editor',
-      viewer: 'viewer',
-      auditLogViewer: 'auditLogViewer',
-      iamSecurityReviewer: 'iamSecurityReviewer',
-      entityEditor: 'entityEditor',
-      entityViewer: 'entityViewer',
-      guestsEditor: 'guestsEditor',
-      guestsViewer: 'guestsViewer',
-      bookingEditor: 'bookingEditor',
-      bookingViewer: 'bookingViewer',
+      manager: 'manager',
+      employee: 'employee',
+      guest: 'guest',
     };
   }
 }
