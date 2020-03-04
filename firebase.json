@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "hotel-front-desk-b92d1",
     "public": "frontend/build",
     "ignore": [
       "firebase.json",
