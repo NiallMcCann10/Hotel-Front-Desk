@@ -188,49 +188,17 @@ const en = {
   },
 
   roles: {
-    owner: {
-      label: 'Owner',
+    manager: {
+      label: 'Manager',
       description: 'Full access to all resources',
     },
-    editor: {
-      label: 'Editor',
-      description: 'Edit access to all resources',
+    employee: {
+      label: 'Employee',
+      description: 'Employee Access',
     },
-    viewer: {
-      label: 'Viewer',
-      description: 'View access to all resources',
-    },
-    auditLogViewer: {
-      label: 'Audit Log Viewer',
-      description: 'Access to view audit logs',
-    },
-    iamSecurityReviewer: {
-      label: 'Security Reviewer',
-      description: `Full access to manage users roles`,
-    },
-    entityEditor: {
-      label: 'Entity Editor',
-      description: 'Edit access to all entities',
-    },
-    entityViewer: {
-      label: 'Entity Viewer',
-      description: 'View access to all entities',
-    },
-    guestsEditor: {
-      label: 'Guests Editor',
-      description: 'Edit access to Guests',
-    },
-    guestsViewer: {
-      label: 'Guests Viewer',
-      description: 'View access to Guests',
-    },
-    bookingEditor: {
-      label: 'Booking Editor',
-      description: 'Edit access to Bookings',
-    },
-    bookingViewer: {
-      label: 'Booking Viewer',
-      description: 'View access to Bookings',
+    guest: {
+      label: 'Guest',
+      description: 'Guest Access',
     },
   },
 
@@ -284,7 +252,7 @@ const en = {
         'User with this email already exists',
       userNotFound: 'User not found',
       disablingHimself: `You can't disable yourself`,
-      revokingOwnPermission: `You can't revoke your own owner permission`,
+      revokingOwnPermission: `You can't revoke your own manager permission`,
     },
   },
 

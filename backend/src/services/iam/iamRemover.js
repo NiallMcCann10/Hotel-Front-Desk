@@ -118,10 +118,10 @@ module.exports = class IamRemover {
   /**
    * Checks if the user is removing its own role.
    */
-  async _isRemovingOwnOwnerRole() {
+  async _isRemovingOwnManagerRole() {
     if (
       !this.data.all &&
-      !this._roles.includes(Roles.values.owner)
+      !this._roles.includes(Roles.values.manager)
     ) {
       return false;
     }
@@ -134,7 +134,7 @@ module.exports = class IamRemover {
       this.currentUser.id,
     );
 
-    return currentUserRoles.includes(Roles.values.owner);
+    return currentUserRoles.includes(Roles.values.manager);
   }
 
   async _validate() {
@@ -153,7 +153,7 @@ module.exports = class IamRemover {
     );
     assert(this._roles, 'roles is required (can be empty)');
 
-    if (await this._isRemovingOwnOwnerRole()) {
+    if (await this._isRemovingOwnManagerRole()) {
       throw new ValidationError(
         this.language,
         'iam.errors.revokingOwnPermission',

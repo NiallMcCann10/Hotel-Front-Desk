@@ -1,4 +1,6 @@
+import PermissionChecker from 'modules/auth/permissionChecker';
 import { createSelector } from 'reselect';
+import Roles from 'security/roles';
 
 const selectRaw = (state) => state.auth;
 
@@ -104,6 +106,44 @@ const selectCurrentUserAvatar = createSelector(
   },
 );
 
+const selectCurrentUserIsGuest = createSelector(
+  [selectCurrentUser],
+  (currentUser) => {
+    return !new PermissionChecker(
+      currentUser,
+    ).rolesMatchOneOf([
+      Roles.values.manager,
+      Roles.values.employee,
+    ]);
+  },
+);
+
+const selectCurrentUserIsManager = createSelector(
+  [selectCurrentUser],
+  (currentUser) => {
+    return new PermissionChecker(
+      currentUser,
+    ).rolesMatchOneOf([
+      Roles.values.manager,
+    ]);
+  },
+);
+
+const selectCurrentUserIsEmployee = createSelector(
+  [
+    selectCurrentUser,
+    selectCurrentUserIsManager
+  ],
+  (currentUser, isManager) => {
+    const isEmployee = new PermissionChecker(
+      currentUser,
+    ).rolesMatchOneOf(
+      Roles.values.employee,
+    );
+    return isEmployee && !isManager;
+  },
+);
+
 const selectors = {
   selectLoadingPasswordResetEmail,
   selectLoadingEmailConfirmation,
@@ -121,6 +161,9 @@ const selectors = {
   selectRaw,
   selectCurrentUserNameOrEmailPrefix,
   selectCurrentUserAvatar,
+  selectCurrentUserIsGuest,
+  selectCurrentUserIsManager,
+  selectCurrentUserIsEmployee,
 };
 
 export default selectors;
