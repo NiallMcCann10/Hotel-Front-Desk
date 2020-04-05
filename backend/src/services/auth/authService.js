@@ -55,7 +55,7 @@ class AuthService {
          * If the user is the first user, it's auto set as the owner.
          * New users have no permissions. You can override this behaviour here.
          */
-        roles: isFirstUser ? [Roles.values.manager] : [],
+        roles: isFirstUser ? [Roles.values.manager] : [Roles.values.guest],
       },
     );
 

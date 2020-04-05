@@ -331,7 +331,7 @@ const en = {
   },
   home: {
     menu: 'Home',
-    message: `This page uses fake data for demonstration purposes only. You can edit it at frontend/view/home/HomePage.js.`,
+    message: `Daily Details.`,
     charts: {
       day: 'Day',
       red: 'Red',
