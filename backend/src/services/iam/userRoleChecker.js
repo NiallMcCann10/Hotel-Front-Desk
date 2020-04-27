@@ -1,5 +1,6 @@
 const Roles = require('../../security/roles');
 
+//Check the users roles in the database and give them correct permissions in the app
 module.exports = class UserRoleChecker {
     static isGuest(currentUser){
         if(!currentUser || !currentUser.roles) {
