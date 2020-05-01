@@ -22,7 +22,7 @@ const en = {
   },
 
   app: {
-    title: 'Hotel-Front-Desk',
+    title: 'Hotel Reservations System',
   },
 
   entities: {
@@ -304,6 +304,7 @@ const en = {
       createdByEmail: 'User Email',
     },
   },
+  //Settings changed
   settings: {
     title: 'Settings',
     menu: 'Settings',
@@ -314,6 +315,7 @@ const en = {
     fields: {
       theme: 'Theme',
     },
+    //Background Themes
     colors: {
       default: 'Default',
       cyan: 'Cyan',
@@ -329,6 +331,7 @@ const en = {
       yellow: 'Yellow',
     },
   },
+  //Charts details printed out to screen
   home: {
     menu: 'Home',
     message: `Daily Details.`,
