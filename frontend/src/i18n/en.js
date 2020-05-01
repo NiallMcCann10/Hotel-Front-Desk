@@ -21,10 +21,12 @@ const en = {
     mustSelectARow: 'Must select a row',
   },
 
+  //Application Name
   app: {
     title: 'Hotel Reservations System',
   },
 
+  //Guest Fields
   entities: {
     guests: {
       name: 'guests',
@@ -78,6 +80,7 @@ const en = {
       },
     },
 
+    //Booking Fields
     booking: {
       name: 'booking',
       label: 'Bookings',
@@ -150,6 +153,7 @@ const en = {
       title: 'Edit Profile',
       success: 'Profile updated successfully',
     },
+    //Create an Account/ Sign In
     createAnAccount: 'Create an account',
     rememberMe: 'Remember me',
     forgotPassword: 'Forgot password',
@@ -164,9 +168,11 @@ const en = {
       message: `Please confirm your email at <strong>{0}</strong> to continue.`,
       submit: `Resend email verification`,
     },
+    //NO permissions granted to new user
     emptyPermissions: {
       message: `You have no permissions yet. Wait for the admin to grant you privileges.`,
     },
+    //Reset Password
     passwordResetEmail: {
       message: 'Send password reset email',
       error: `Email not recognized`,
@@ -174,9 +180,11 @@ const en = {
     passwordReset: {
       message: 'Reset password',
     },
+    //Verify Email
     emailAddressVerificationEmail: {
       error: `Email not recognized`,
     },
+    //Email pop up messages
     verificationEmailSuccess: `Verification email sent successfully`,
     passwordResetEmailSuccess: `Password reset email sent successfully`,
     passwordResetSuccess: `Password changed successfully`,
@@ -187,6 +195,7 @@ const en = {
     },
   },
 
+  //Different Role types
   roles: {
     manager: {
       label: 'Manager',
@@ -360,6 +369,7 @@ const en = {
       customer: 'Customer',
     },
   },
+  //Error messages
   errors: {
     backToHome: 'Back to home',
     403: `Sorry, you don't have access to this page`,
@@ -387,6 +397,7 @@ const en = {
         return `${path} must be a ${type}`;
       },
     },
+    //Verification Messages
     string: {
       length:
         '${path} must be exactly ${length} characters',
@@ -428,12 +439,15 @@ const en = {
     },
   },
   /* eslint-disable */
+
+  //Upload a file for the bill
   fileUploader: {
     upload: 'Upload',
     image: 'You must upload an image',
     size: 'File is too big. Max allowed size is {0}',
     formats: `Invalid format. Must be '{0}'.`,
   },
+  //Importing messages
   importer: {
     line: 'Line',
     status: 'Status',
@@ -479,6 +493,7 @@ const en = {
     noImage: 'No image',
   },
 
+  //Firebase Errors
   firebaseErrors: {
     'auth/user-disabled': 'Your account is disabled',
     'auth/user-not-found': `Sorry, we don't recognize your credentials`,
