@@ -334,7 +334,7 @@ const en = {
     message: `Daily Details.`,
     charts: {
       day: 'Day',
-      red: 'Red',
+      red: 'Availability',
       green: 'Green',
       yellow: 'Yellow',
       grey: 'Grey',
