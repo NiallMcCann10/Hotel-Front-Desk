@@ -335,11 +335,9 @@ const en = {
     charts: {
       day: 'Day',
       red: 'Availability',
-      green: 'Green',
-      yellow: 'Yellow',
-      grey: 'Grey',
-      blue: 'Blue',
-      orange: 'Orange',
+      yellow: 'In House',
+      grey: 'Profit',
+      blue: 'Departures',
       months: {
         1: 'January',
         2: 'February',
