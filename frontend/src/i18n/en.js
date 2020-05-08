@@ -343,7 +343,7 @@ const en = {
   //Charts details printed out to screen
   home: {
     menu: 'Home',
-    message: `Daily Details.`,
+    message: `Daily Details for upcoming 5 days.`,
     charts: {
       day: 'Day',
       red: 'Availability',
