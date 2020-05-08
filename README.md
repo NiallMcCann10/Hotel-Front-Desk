@@ -5,18 +5,22 @@ My reasoning behind creating this application is from my serveral years working 
 
 <h1>Compiling</h1>
 To compile this application, the user must first open the backend folder in a code editor of their choice. Open the integrated terminal and type:<br>
-![Backend Compiling](https://github.com/NiallMcCann10/Hotel-Front-Desk/blob/master/ReadmeImages/backend.PNG)
+
+![](ReadmeImages/backend.PNG)
 <br>
-From here the backend will complie.
+From here the backend will compile.
 
 Then the user must open the frontend folder in the code editor of their choice. Open the integrated terminal and again type:<br>
-npm run deploy:development<br>
+![](ReadmeImages/frontend.PNG)
+<br>
 
 This will compile the frontend of the Application.
 
 <h1>Running</h1>
 Once compiled, the frontend terminal will give the user the web address of the application : 
 https://hotel-front-desk-b92d1.firebaseapp.com
+
+![](ReadmeImages/hosting.PNG)
 
 From loading the address in a browser of the users choice, they will be able to create an account, and log into the system and create, modify and delete guests and booking profiles.
 
