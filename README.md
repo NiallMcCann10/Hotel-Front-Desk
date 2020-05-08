@@ -5,7 +5,8 @@ My reasoning behind creating this application is from my serveral years working 
 
 <h1>Compiling</h1>
 To compile this application, the user must first open the backend folder in a code editor of their choice. Open the integrated terminal and type:<br>
-npm run deploy:development<br>
+![Backend Compiling](https://github.com/NiallMcCann10/Hotel-Front-Desk/blob/master/ReadmeImages/backend.PNG)
+<br>
 From here the backend will complie.
 
 Then the user must open the frontend folder in the code editor of their choice. Open the integrated terminal and again type:<br>
