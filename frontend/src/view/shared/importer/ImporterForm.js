@@ -11,6 +11,7 @@ import FormWrapper, {
   formItemLayout,
 } from 'view/shared/styles/FormWrapper';
 
+//Importing File Fields and styling
 export default (selectors, actions) => {
   class ImporterForm extends Component {
     handleRequest = (request) => {

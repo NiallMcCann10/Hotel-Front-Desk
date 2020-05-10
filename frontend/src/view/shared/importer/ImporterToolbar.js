@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { i18n } from 'i18n';
 import Toolbar from 'view/shared/styles/Toolbar';
 
+//Toolbar for importing
 export default (
   selectors,
   actions,

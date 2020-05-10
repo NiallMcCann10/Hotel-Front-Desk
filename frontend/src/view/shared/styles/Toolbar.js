@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+//Toolbar style
 const Toolbar = styled.div`
   margin-bottom: 24px;
 

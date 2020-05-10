@@ -2,6 +2,7 @@ import PermissionChecker from 'modules/auth/permissionChecker';
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 
+//Email Authentication Checker
 function EmailUnverifiedRoute({
   component: Component,
   currentUser,

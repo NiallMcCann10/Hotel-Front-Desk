@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+//Table wrapper style
 const TableWrapper = styled.div`
   .ant-table th {
     white-space: nowrap;

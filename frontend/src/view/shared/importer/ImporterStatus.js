@@ -4,6 +4,7 @@ import { Progress, Alert } from 'antd';
 import { i18n } from 'i18n';
 import ImporterStatusWrapper from 'view/shared/importer/styles/ImporterStatusWrapper';
 
+//Importing Status Fields
 export default (selectors) => {
   class ImporterStatus extends Component {
     renderCompleted() {

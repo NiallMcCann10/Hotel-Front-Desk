@@ -5,6 +5,7 @@ import { i18n } from 'i18n';
 import statuses from 'modules/shared/importer/importerStatuses';
 import ImporterErrorStatusMessage from 'view/shared/importer/styles/ImporterErrorStatusMessage';
 
+//Importing row status
 class ImporterRowStatus extends Component {
   render() {
     const { value, errorMessage } = this.props;
