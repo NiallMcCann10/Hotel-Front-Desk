@@ -294,7 +294,7 @@ const en = {
       email: 'Email ${value} is invalid',
     },
   },
-
+  //Audit Log Fields
   auditLog: {
     menu: 'Audit Logs',
     title: 'Audit Logs',
@@ -383,7 +383,6 @@ const en = {
     },
     defaultErrorMessage: 'Ops, an error occurred',
   },
-  // See https://github.com/jquense/yup#using-a-custom-locale-dictionary
   /* eslint-disable */
   validation: {
     mixed: {

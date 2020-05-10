@@ -10,6 +10,7 @@ function label(name) {
   return i18n(`auditLog.fields.${name}`);
 }
 
+//Fields for Audit Logs
 const fields = {
   id: new IdField('id', label('id')),
   timestampRange: new DateTimeRangeField(

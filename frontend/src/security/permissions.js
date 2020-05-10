@@ -5,6 +5,7 @@ class Permissions {
   static get values() {
     return {
       iamEdit: {
+        //Editing Permssions
         id: 'iamEdit',
         allowedRoles: [
           roles.manager,
@@ -12,6 +13,7 @@ class Permissions {
         ],
         allowedStorageFolders: ['user'],
       },
+      //Creating Permissions
       iamCreate: {
         id: 'iamCreate',
         allowedRoles: [
@@ -19,6 +21,7 @@ class Permissions {
           roles.employee,
         ],
       },
+      //Import Permissions
       iamImport: {
         id: 'iamImport',
         allowedRoles: [
@@ -26,6 +29,7 @@ class Permissions {
           roles.employee,
         ],
       },
+      //Read Permissions
       iamRead: {
         id: 'iamRead',
         allowedRoles: [
@@ -39,10 +43,12 @@ class Permissions {
           roles.employee,
         ],
       },
+      //See Audit Log
       auditLogRead: {
         id: 'auditLogRead',
         allowedRoles: [roles.manager,],
       },
+      //See settings page
       settingsEdit: {
         id: 'settingsEdit',
         allowedRoles: [roles.manager],
@@ -54,6 +60,7 @@ class Permissions {
           roles.employee,
         ],
       },
+      //Create Guests Permissions
       guestsCreate: {
         id: 'guestsCreate',
         allowedRoles: [
@@ -63,6 +70,7 @@ class Permissions {
         ],
         allowedStorageFolders: ['guests'],
       },
+      //Edit Guests Permissions
       guestsEdit: {
         id: 'guestsEdit',
         allowedRoles: [
@@ -72,6 +80,7 @@ class Permissions {
         ],
         allowedStorageFolders: ['guests'],
       },
+      //Delete Guests permissions
       guestsDestroy: {
         id: 'guestsDestroy',
         allowedRoles: [
@@ -95,13 +104,14 @@ class Permissions {
           roles.guest
         ],
       },
-
+      //Import Bookings Permissions
       bookingImport: {
         id: 'bookingImport',
         allowedRoles: [
           roles.manager,
         ],
       },
+      //Create Booking Permissions
       bookingCreate: {
         id: 'bookingCreate',
         allowedRoles: [
@@ -111,6 +121,7 @@ class Permissions {
         ],
         allowedStorageFolders: ['booking'],
       },
+      //Edit Booking Permissions
       bookingEdit: {
         id: 'bookingEdit',
         allowedRoles: [
@@ -120,6 +131,7 @@ class Permissions {
         ],
         allowedStorageFolders: ['booking'],
       },
+      //Delete Booking Permissions
       bookingDestroy: {
         id: 'bookingDestroy',
         allowedRoles: [
